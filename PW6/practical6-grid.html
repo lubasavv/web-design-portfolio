@@ -1,0 +1,189 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title>PW6</title> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<style> 
+ body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 20px;
+}
+
+.logo { 
+    float: left; 
+    margin-left: 10px; 
+    color: rgb(28, 0, 128); 
+    font-size: 80px; 
+} 
+.logo2 { 
+    float: left; 
+    color: rgb(0, 0, 0); 
+    font-size: 40px; 
+} 
+header { 
+    background-color: white; 
+    padding-bottom: 120px;  
+    padding-top: 10px; 
+} 
+nav { 
+
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 10px;
+    font-size: 18px;
+}        
+nav a { 
+    background-color: rgb(28, 0, 128); 
+    color: white; 
+    padding: 10px 30px; 
+    text-decoration: none; 
+} 
+.img { 
+    margin: 10px 20px; 
+    float: left; 
+    width: 10%;
+    min-width: 300px;
+}  
+
+
+.right { 
+    font-size: 18px; 
+    float: left; 
+    margin-right: 10px;
+    color: rgb(63, 64, 64);
+}
+.container { 
+    gap: 5px 5px; 
+    float: right; 
+    display: flex; 
+    flex-wrap: wrap; 
+    padding: 10px 20px; 
+}
+
+.left{
+  padding-left: 10px;
+  font-size: 25px;
+  color: rgb(36, 37, 37);
+}
+
+@media only screen and (max-width: 800px) {
+    .right {
+        background: rgb(93, 0, 255);
+        font-size: 16px;
+    }
+    nav{
+      font-size: 17px;
+    }
+    .left{
+      font-size: 20px;
+    }
+    .hide {
+          display: none;
+        }
+}
+@media only screen and (max-width: 390px) {
+    .right {
+        background: rgb(150, 13, 255);
+        font-size: 14px;
+    }
+    nav{
+      font-size: 15px;
+    }
+    .left{
+      font-size: 18px;
+    }
+    .hide {
+          display: none;
+        }
+}  
+
+.news {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        /* Style the news preview element */
+        .news-preview {
+            width: 20%;
+           
+            margin: 10px;
+            padding: 10px;
+            
+        }
+        
+        /* Style the thumbnail image */
+        .news-thumbnail {
+            max-width: 80%;
+            height: auto;
+        }
+ 
+</style> 
+</head> 
+<body> 
+
+<header> 
+    <div class="logo">IT</div>
+    <div class="logo2">courses</div>    
+    <nav class="container"> 
+        <a href="#">Home</a> 
+        <a href="#">Сourse catalog</a> 
+        <a href="#">Corporate training</a> 
+        <a href="#">Employment </a> 
+        <a href="#">Reviews</a> 
+        <a href="#">Contacts</a> 
+    </nav> 
+</header> 
+
+
+    <section id="1"> 
+        <div class="right">  
+            <img class="img"   src="prog.jpg" alt="picture 1"> 
+            <h2>Why should you choose our IT courses?</h2> 
+            <p>In today's digital world, having information technology skills has become vital for success in various industries. </p>
+              <p><strong>Experienced practical teachers</strong></p>
+            <p>  Our courses are designed to provide you with the necessary knowledge and practical experience to succeed in this rapidly changing field.Our teachers are experienced practitioners from the information technology industry. They have a deep understanding of the latest trends and technologies and bring their real-world experience to the classroom. This ensures that you get relevant and practical knowledge.</p> 
+            <p><strong>Interactive and hands-on learning</strong></p> 
+            <p>Our courses are based on an interactive and hands-on approach to learning. We believe that learning by doing is the most effective way to acquire valuable skills. You will work on real projects, participate in group discussions and receive individual support from our teachers.</p>
+            </div> 
+    </section> 
+
+    <section id="2">
+        <h2 class="center">News about courses</h2>
+      
+        <section class="news">
+          <article class="news-preview">
+            <img src="JS.jpg" alt="News Thumbnail 1" class="news-thumbnail">
+            <h3>JavaScript from scratch</h3>
+            <p class="news-meta">Nearest date: May 30, 2024</p>
+            <p class="hide">This course is designed for absolute beginners in JavaScript who want to master the basics of a programming language.</p>
+            <a href="#" class="read-more">Read More</a>
+          </article>
+      
+          <article class="news-preview">
+            <img src="ptn.jpg" alt="News Thumbnail 2" class="news-thumbnail">
+            <h3>Python programming</h3>
+            <p class="news-meta">Nearest date: June 5, 2024</p>
+            <p class="hide">This course is designed for novice programmers who want to learn the basics of the Python programming language.</p>
+            <a href="#" class="read-more">Read More</a>
+          </article>
+      
+          <article class="news-preview">
+            <img src="html.jpg" alt="News Thumbnail 3" class="news-thumbnail">
+            <h3>Easy start in HTML</h3>
+            <p class="news-meta">Nearest date: May 25, 2024</p>
+            <p class="hide">This course is designed for beginners who want to quickly master the basics of HTML and start creating simple web pages.</p>
+            <a href="#" class="read-more">Read More</a>
+          </article>
+      
+          <article class="news-preview">
+            <img src="C++.jpg" alt="News Thumbnail 4" class="news-thumbnail">
+            <h3>The basics of C++</h3>
+            <p class="news-meta">Nearest date: May 20, 2024</p>
+            <p class="hide">This course is designed for beginners who want to learn the basics of the C++ programming language.</p>
+            <a href="#" class="read-more">Read More</a>
+          </article>
+        </section>
+      </section>
+    </body> 
+</html> 

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Savenkova_PW3</title>
+  
+ <style>
+   body{
+        font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+        background-color: white;
+        color:rgb(3, 54, 98);
+    }
+    header{
+        background-color: rgb(149, 134, 212);
+        text-align: center;
+        color:white;
+        padding:25px;
+    }
+    article{
+        font-size: larger;
+        font-weight: bolder;
+    }
+    p.solid {border-style: solid; border-color: rgb(155, 110, 154); border-inline:inherit;}
+    p.hidden {border-style: hidden;  border-block:inherit ;}
+    p.back1{background-color:rgb(109, 64, 107);}
+    p.back2{background-color: #9d75f9;}
+    p.back3{background-color: rgba(51, 45, 180, 0.619);}
+    p.back4{background: linear-gradient(purple,white);}
+    p.back5{background: linear-gradient(purple,white,purple,white);}
+    p.back6{background-image:url("unnamed.jpg");background-repeat:round;}
+    p.back7{background:url("arbuz.jpg") no-repeat center, url("photo_2024-04-11_20-38-40.jpg") no-repeat right;}
+    .block1 {
+               border: 7px double rgb(149, 140, 176); /* Solid border */
+               padding: 10px;
+       }
+       .block2 {
+               border: 3px ridge rgb(186, 186, 186); /* Dashed border */
+               padding: 5px;
+       }
+   
+       .inline1  {
+               display: block;
+               border: 1px solid rgb(219, 148, 198); /* Solid border */
+               padding: 5px;
+       }
+       .inline2 {
+               border: 2px dotted rgb(190, 166, 199); /* Dotted border */
+               padding: 5px;
+       }
+ </style>
+</head>
+<body>
+    <header><h1>Report by Savenkova Luba PW3</h1></header>
+    <main>
+      <h2 class="block1">Research for and describe the ways to open developers console in Mozilla Firefox and Safari.</h2>
+        <strong>Mozilla Firefox:</strong>
+        <p>1. Ctrl + Shift + I.</p>
+        <p>2.Through the menu: press the three vertical buttons. Open the list, select "Other tools", and then — "Page source code".</p>
+        <strong>Safari:</strong>
+        <p>1. Cmd + Option + I </p>
+        <p>2.Open the browser settings in the Safari menu.Go to the "Add-on" tab.Check the box "Show the Development menu in the menu bar".After that, open a page on the Internet, right-click and select:Show the program code of the page. Open the page code in a new tab.</p>
+        <h2 class="block2">What way of including internal links into the HTML page you would consider generally
+            preferable: absolute or relative links? Describe use cases for choosing absolute links and
+            choosing relative links</h2>
+        <p>I think which way to include internal links depends on the specific task. For example, when working with external resources, it is better to use absolute links. In our lab works, I think it's better to use relative links. For example, when downloading an image, you can drop it into the html folder and then easily interpret it into code. This is precisely the advantage of relative links. They make the code more portable, I would say. Absolute links can be used to link to specific pages of a website or to work with content management systems. Relative links are the same they are used within 1 website and in testing work, for example, in which the domain may later change (another advantage of relative links)</p>
+        
+      <h2 class="inline2">Research and write about image formats used in web-development. What is the difference between JPG, GIF and PNG formats? What is WEBP image type? What is SVG?</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th>JPG</th>
+            <th>GIF</th>
+            <th>PNG</th>
+          </tr>
+          <tr>
+            <td>use lossy compression(some image quality is sacrificed to reduce file size)</td>
+            <td>lossless compression, preserving image quality without any loss during compression.</td>
+            <td>lossless compression, similar to GIF, maintaining image quality without any loss</td>
+          </tr>
+          <tr>
+            <td>well-suited for photographs and images with complex color gradients</td>
+            <td>supports animation, making it suitable for simple animated images and graphics</td>
+            <td>supports transparency and alpha channels, making it ideal for images with transparent backgrounds </td>
+          </tr>
+          <tr>
+            <td>does not support transparency</td>
+            <td>supports transparency,</td>
+            <td>well-suited for images with sharp edges, text, or simple graphics that require high-quality rendering
+            </td>
+          </tr>
+        </tbody>
+      </table>
+        <p>WEBP is a modern image format that offers more efficient compression and smaller file sizes compared to JPG and PNG.
+            It supports lossy, which makes it versatile for various types of images.
+            WEBP images provide improved performance on websites.</p>
+       
+    <p>SVG (Scalable Vector Graphics) is an XML—based vector image format that scales without loss of quality. That is why it is ideal for responsive web design.SVG supports animation, interactivity, and accessibility features, making it suitable for icons, logos, and illustrations.
+        SVG files are lightweight, editable with code, and can be styled with CSS</p>
+       <dt id="screen"><h2 class="inline1">Include the screenshot you’ve created to the report. Optionally, float the image.</h2></dt>
+        <img src="screen.png" alt="screenshot"
+        style="width: 1000px;height: 600px;">
+        <h2>Add 5-7 Lorem Ipsum paragraphs:</h2>
+        <p class="back1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p class="back2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p class="back3">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p class="back4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p class="back5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p class="back6">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <p class="back7">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </main>
+</body>

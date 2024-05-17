@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Practical7</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> 
+    
+    <style>
+        body {
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            max-width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #def7ff;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #b1cbec;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        button.calculate {
+            background-color: #5b4caf;
+            color: white;
+            margin-right: 10px;
+        }
+        button.reset {
+            background-color: #5b4caf;
+            color: white;
+        }
+        output {
+            display: block;
+            margin-top: 10px;
+        }
+.slider-container {
+            width: 70%;
+            margin: 30px auto;
+            overflow: hidden;
+        }
+        .slider {
+            display: flex;
+        }
+        .slide {
+            width: 100%;
+        }
+        .slide-content {
+            padding: 40px;
+        }
+    </style>
+     </head> 
+<body>
+    <form id="calculatorForm">
+        <label for="num1">First Number:</label>
+        <input type="number" id="num1" name="num1" value="0">
+        
+        <label for="operator">Operation:</label>
+        <select id="operator" name="operator">
+            <option value="+">Addition</option>
+            <option value="-">Subtraction</option>
+            <option value="*">Multiplication</option>
+            <option value="/">Division</option>
+        </select>
+        
+        <label for="num2">Second Number:</label>
+        <input type="number" id="num2" name="num2" value="0">
+        
+        <button type="button" class="calculate" onclick="performCalculation()">Calculate</button>
+        <button type="reset" class="reset">Reset</button>
+        
+        <output id="result"></output>
+    </form>
+
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+                <div class="slide-content">
+                    <h3>Explain “repaint” and “reflow” of the webpage:</h3>
+                    <p>Reflow is a process that occurs when it is necessary to change the structure of a document, for example, when the dimensions or position of certain elements on a web page change.Repaint is a process when the appearance of an element changes without changing its size or location (changing the background color or font of the text).</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slide-content">
+                    <h3>How does JavaScript on the webpage affects the page load speed and performance?</h3>
+                    <p>JavaScript on a web page can have a significant impact on page loading speed and performance. For example, executing JavaScript can also slow down the display of content on a page, as the browser must load, parse, and execute scripts before continuing to display.Another point is related to caching if JavaScript files are not cached by the browser, then scripts will be reloaded every time the page loads, which will increase the loading time.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slide-content">
+                    <h3>What is “minification” of the script? Why it is useful to minify your scripts?</h3>
+                    <p>Minification is the removal of unnecessary characters and spaces from the source code of the script without changing the functionality. Minification is useful because it helps to reduce file size, improve performance, and increase security.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slide-content">
+                    <h3>What is a JS Web Worker and when do we need it?</h3>
+                    <p>A JavaScript Web Worker is a feature that allows you to run script operations in the background, separate from the main execution thread of a web page. This Web Worker is necessary when you need to perform complex, resource-intensive tasks without blocking the user interface or the main thread of the web application. For example, when you need to process a large dataset or manipulate an image.</p>
+                </div>
+            </div>
+                    </div>
+        <button class="nav-btn prev-btn" onclick="prevSlide()"></button>
+        <button class="nav-btn next-btn" onclick="nextSlide()"></button>
+    
+    <script>
+        function calculate(num1, operator, num2) {
+            switch(operator) {
+                case '+':
+                    return num1 + num2;
+                case '-':
+                    return num1 - num2;
+                case '*':
+                    return num1 * num2;
+                case '/':
+                    if(num2 !== 0) {
+                        return num1 / num2;
+                    } else {
+                        return "Error: Division by zero is not allowed.";
+                    }
+                default:
+                    return "Error: Invalid operator.";
+            }
+        }
+        function performCalculation() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var operator = document.getElementById('operator').value;
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var result = calculate(num1, operator, num2);
+            document.getElementById('result').textContent = "The result is: " + result;
+        }
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
+
+  <script> 
+      $(document).ready(function(){ 
+          $('.owl-carousel').owlCarousel({ 
+              loop:true, 
+              margin:20, 
+              autoplay:true, 
+              autoplayTimeout:5000, 
+              autoplayHoverPause:true, 
+              items: 1 
+          }); 
+      }); 
+  </script> 
+</body>
+</html>
+ 

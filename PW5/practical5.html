@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PW5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #a4b4f7;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        article {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #4d4ae4;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        article h1, article h2, article h3, article h4, article h5 {
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #0f001f;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+          img {
+                max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+        
+        a {
+            color: white;
+        }
+        a:hover {
+            color: rgb(113, 103, 255);
+        }
+    </style>
+</head>
+<body>
+    <h3>Answers to the questions</h3>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#answer1">Answer 1</a></li>
+                <li><a href="#answer2">Answer 2</a></li>
+                <li><a href="#answer3">Answer 3</a></li>
+                <li><a href="#answer4">Answer 4</a></li>
+                <li><a href="#answer5">Answer 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="answer1">
+            <h1>What is a box model in CSS? Give box-sizing property definition</h1>
+            <p>The CSS box model defines the size and location of elements on a web page, including content, margins, borders, and margins.  Content is information inside the element, indentation is the space around the content, border is the line separating the element, margins are the space around the element, including indents and borders.</p>
+            <div>
+                <img src="box.png" alt="answer1">
+
+            </div>
+        </article>
+
+        <article id="answer2">
+            <h2>What is a “clearfix hack” and when does it need to be applied?</h2>
+            <p>Clearfix is a method that allows you to automatically fix problems with the alignment of elements in the layout, especially when using floating elements. It prevents the need to add additional tags or styles to correctly display elements on the page. This is especially useful when creating horizontal layouts where the elements must be aligned correctly.</p>
+            <img src="clearfix.png" alt="answer2">
+        </article>
+
+        <article id="answer3">
+            <h2>What is a “margin collapse” and what are the use cases for margin: auto and negative margin values?</h2>
+            <p> Margin collapse is a common behavior in CSS where the vertical margins of two adjacent block-level elements collapse, resulting in a single margin space between them. The margin space will be equal to the larger of the two margins, effectively combining them.The "margin: auto" property is frequently employed to horizontally center elements within their parent container. When applied to a block-level element, it evenly distributes the remaining space around the element, effectively centering it horizontally.Negative margin values are utilized to fine-tune the positioning of elements. They can be used to overlap elements or bring them closer together. However, it's important to exercise caution when using negative margins, as they have the potential to unpredictably impact the layout, particularly when combined with other layout techniques.</p>
+            <div>
+                <img src="collapse.png" width="300" height="300" alt="answer3">
+                <img src="collapse-2.png" width="300" height="300" alt="answer3" >
+            </div>
+        </article>
+
+        <article id="answer4">
+            <h2>What was the problem with achieving Holy Grail layout?</h2>
+            <p>The main problem that can be encountered when creating a Holy Grail layout is to maintain the same height for the columns so that the central column can adjust to the content while ensuring the flexibility of the layout.</p>
+                <img src="problem.png" alt="answer4">
+        </article>
+        
+        <article id="answer5">
+            <h2>What are the modern ways to achieve Holy Grail layout?</h2>
+            <p>Modern CSS techniques like Flexbox and Grid Layout have made it easier to create complex layouts like the Holy Grail layout. Flexbox allows flexible alignment and resizing of elements within a container by using display: flex;. Grid Layout offers a two-dimensional grid system for precise layout control, simplifying complex arrangements with minimal code. These techniques provide improved browser support and cleaner code, empowering developers to build responsive layouts effortlessly.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Created by Luba Savenkova</p>
+        <p>Course - "Web-design"</p>
+        <p>Date - 01.05.2024</p>
+        <p>Day - Wednesday</p>
+        <p>Created in VS Studio</p>
+    
+   <a href="https://www.w3schools.com/css/css3_box-sizing.asp">Refrence 1</a>
+   <a href=" https://www.geeksforgeeks.org/what-is-a-clearfix/">Refrence 2</a>
+   <a href=" https://www.freecodecamp.org/news/what-is-margin-collapse-and-how-to-avoid-it/#:~:text=Margin%20collapse%20occurs%20when%20vertically,by%20the%20larger%20number%20margin.">Refrence 3</a>
+    </footer>
+</body>
+</html>

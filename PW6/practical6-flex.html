@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>PW6-Flex</title>
+<style>
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+   header{
+    text-align: center;
+   }
+   .top-news{
+    position:absolute;
+    bottom:300px;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1px 10px;
+    text-align: left;
+   }
+   .read-more{
+    background-color: #6372f3;
+    color:white;
+    float:right;
+    padding: 10px;
+   }
+   .read-more2{
+    background-color: #6372f3;
+    color:white;
+    padding: 10px;
+   }
+   h3{
+    color:#6372f3;
+   }
+   .news{
+        display: flex;
+        flex-wrap: wrap;
+        width:80%;
+   }
+   .thumbnail {
+    float: left;
+    padding-right: 10px; 
+    max-width: 400px; 
+    height: auto; 
+}
+
+.news-preview {
+    width: 100%; 
+}
+
+.news-preview p {
+    font-size: 16px; 
+}
+
+article{
+    float:left;
+    width:90%;
+}
+
+nav {
+     float: right;
+     width: 10%;
+     height: 1200px;;
+     background: #cbd0ff;
+     text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    clear:both; /* Чтобы блок был под всем содержимым */
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    article, nav {
+     width: 100%;
+     height: auto;
+    }
+    section {
+     -webkit-flex-direction: column;
+     flex-direction: column;
+    }
+    .hide {
+        width: 70%; 
+    }
+}
+
+@media (max-width: 390px) {
+    .hide {
+        display: none;
+    }
+}        
+</style>
+</head>
+<body>
+<main>
+    <header>
+        <img src="drea.jpg" alt="Train" style="width:100%;height:450px;">
+        <div class="top-news">
+        <h3>Header</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+            <a href="#" class="read-more">Read More</a></p>
+     </div>
+    </header>
+    <article class="news">
+        <section class="news-preview">
+            <h3>Picture</h3>
+            <pre>Submitted by Anonymous (not verified) on Tue, 03/06/2012 - 02:48</pre>
+            <img class="thumbnail" src="les.jpg" alt="Thumbnail">
+            <p id="n1" class="hide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <a href="#" class="read-more2">Read More</a>
+        </section>
+        <section class="news-preview">
+            <h3>Picture 2</h3>
+        <pre>Submitted by Anonymous (not verified) on Tue, 03/06/2012 - 02:48</pre>
+            <img class="thumbnail" src="les2.jpg" alt="Thumbnail">
+            <p id="n2" class="hide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <a href="#" class="read-more2">Read More</a>
+        </section>
+        <section class="news-preview">
+            <h3>Picture 3</h3>
+        <pre>Submitted by Anonymous (not verified) on Tue, 03/06/2012 - 02:48</pre>
+            <img class="thumbnail" src="cars.jpg" alt="Thumbnail">
+            <p id="n3" class="hide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <a href="#" class="read-more2">Read More</a>
+        </section>
+    </article>
+    <nav>
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#n1">Picture1</a></li>
+          <li><a href="#n2">Picture2</a></li>
+          <li><a href="#n3">Picture3</a></li>
+        </ul>
+      </nav>
+      <div class="footer">
+        &copy; 2024 PICTURES
+    </div>
+</main>
+</body>
